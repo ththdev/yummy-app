@@ -10,11 +10,11 @@ import TabBarIcon from '../components/TabBarIcon';
 import colors from '../config/colors';
 
 // Containers
-import Today from '../containers/Today';
-import Liked from '../containers/Liked';
-import Recipe from '../containers/Recipe';
-import Cart from '../containers/Cart';
-import Profile from '../containers/Profile';
+import Today from '../containers/today';
+import Liked from '../containers/liked';
+import Recipe from '../containers/recipe';
+import Cart from '../containers/cart';
+import Profile from '../containers/profile';
 
 interface Props {
   focused: boolean;

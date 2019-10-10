@@ -12,12 +12,15 @@ const Container = styled.View`
 
 interface Props {
   navigation: NavigationStackProp;
+  toStart?: boolean
 }
 
-const BackButton = ({navigation}: Props) => {
+const BackButton = ({navigation, toStart}: Props) => {
   return (
     <Container>
-      <TouchableOpacity onPress={() => navigation.goBack()}>
+      <TouchableOpacity onPress={() => 
+        toStart ? navigation.navigate('Start') :navigation.goBack()}
+      >
         <Icon name="chevron-left" size={32} />
       </TouchableOpacity>
     </Container>

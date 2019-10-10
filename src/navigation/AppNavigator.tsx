@@ -4,23 +4,16 @@ import {createStackNavigator} from 'react-navigation-stack';
 
 // Navigators or Screens
 import MainTabNavigator from './MainTabNavigator';
-import Start from '../screens/Auth/Start';
-import Login from '../screens/Auth/Login';
-
-const AuthStack = createStackNavigator(
-  {
-    Start,
-    Login,
-  },
-  {headerMode: 'none'},
-);
+import AuthNavigator from './AuthNavigation'
+import AppLoading from '../screens/AppLoading'
 
 export default createAppContainer(
   createSwitchNavigator(
     {
-      Auth: AuthStack,
+      AppLoading,
+      Auth: AuthNavigator,
       Main: MainTabNavigator,
     },
-    {initialRouteName: 'Auth'},
+    {initialRouteName: 'AppLoading'},
   ),
 );
