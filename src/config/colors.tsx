@@ -9,7 +9,7 @@ const colors = {
   gradientTop: '#095050',
   gradientBottom: '#417E81',
   tabIconSelected: '#417E81',
-  tabIconDefault: '#f2f2f2',
+  tabIconDefault: '#c4c4c4',
 };
 
 export default colors;
