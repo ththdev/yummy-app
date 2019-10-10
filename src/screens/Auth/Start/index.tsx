@@ -69,7 +69,7 @@ const Start = ({navigation}: Props) => {
       style={{flex: 1}}>
       <SafeAreaView>
         <Header>
-          <TouchableOpacity onPress={() => navigation.navigate('SignIn')}>
+          <TouchableOpacity onPress={() => navigation.navigate('Login')}>
             <Login>Login</Login>
           </TouchableOpacity>
         </Header>
@@ -83,7 +83,7 @@ const Start = ({navigation}: Props) => {
           </View>
           <View>
             <GoogleButton />
-            <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
+            <TouchableOpacity onPress={() => navigation.navigate('Register')}>
               <Signup>
                 <SignupText>Sign Up</SignupText>
               </Signup>
