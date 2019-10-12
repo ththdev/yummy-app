@@ -5,6 +5,7 @@ import { NavigationStackProp } from 'react-navigation-stack'
 
 // Components
 import BackButton from '../../../../components/BackButton'
+import ProgressBar from '../../../../components/auth/ProgressBar'
 import { NameForm, SubmitButton } from '../../../../components/auth/RegisterForm'
 
 const SafeAreaView = styled.SafeAreaView`
@@ -37,14 +38,15 @@ const SubTitle = styled.Text`
 `;
 
 interface Props {
-    navigation: NavigationStackProp
+    navigation: NavigationStackProp,
 }
 
 const Name = ({ navigation }: Props) => {
     return (
       <SafeAreaView>
         <StatusBar barStyle="dark-content" />
-        <BackButton navigation={navigation} toStart={true} />
+        {/* <BackButton navigation={navigation} toStart={true} /> */}
+        <ProgressBar navigation={navigation} percent={25} />
         <Container behavior="padding">
             <Main>
               <Title>Register</Title>
