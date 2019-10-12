@@ -5,7 +5,7 @@ import { NavigationStackProp } from 'react-navigation-stack'
 
 // Components
 import BackButton from '../../../../components/BackButton'
-import { EmailForm, SubmitButton } from '../../../../components/auth/RegisterForm'
+import { PasswordForm, SubmitButton } from '../../../../components/auth/RegisterForm'
 
 const SafeAreaView = styled.SafeAreaView`
   flex: 1;
@@ -40,7 +40,7 @@ interface Props {
     navigation: NavigationStackProp
 }
 
-const Email = ({ navigation }: Props) => {
+const Password = ({ navigation }: Props) => {
     return (
         <SafeAreaView>
             <StatusBar barStyle="dark-content" />
@@ -48,13 +48,13 @@ const Email = ({ navigation }: Props) => {
             <Container behavior="padding">
                 <Main>
                   <Title>Register</Title>
-                  <SubTitle>Please enter your email</SubTitle>
-                  <EmailForm />
+                  <SubTitle>Please enter your paaword</SubTitle>
+                  <PasswordForm />
                 </Main>
-                <SubmitButton navigation={navigation} path="Password" />
+                <SubmitButton navigation={navigation} path='Main' />
             </Container>
         </SafeAreaView>
     )
 }
 
-export default Email
+export default Password

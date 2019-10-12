@@ -5,11 +5,13 @@ import Start from '../screens/auth/start'
 import Login from '../screens/auth/login'
 import Name from '../screens/auth/register/name'
 import Email from '../screens/auth/register/email'
+import Password from '../screens/auth/register/password'
 
 const RegisterStack = createStackNavigator(
     {
         Name,
-        Email
+        Email,
+        Password
     },
     { headerMode: 'none' }
 )

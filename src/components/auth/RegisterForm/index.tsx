@@ -54,6 +54,15 @@ const EmailForm = () => {
             <Label>Email</Label>
             <TextInput marginBottom={20}/>
         </Form>
+    )   
+}
+
+const PasswordForm = () => {
+    return (
+        <Form>
+            <Label>Password</Label>
+            <TextInput marginBottom={20}/>
+        </Form>
     )
 }
 
@@ -71,4 +80,4 @@ const SubmitButton = ({ navigation, path }: SubmitButtonProps) => {
     )
 }
 
-export { NameForm, EmailForm, SubmitButton }
+export { NameForm, EmailForm, PasswordForm, SubmitButton }
